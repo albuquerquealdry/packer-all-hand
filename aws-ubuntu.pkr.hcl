@@ -17,14 +17,14 @@ source "amazon-ebs" "ubuntu" {
       root-device-type    = "ebs"
       virtualization-type = "hvm"
     }
-    most_recent = true
-    owners      = ["099720109477"]
+    most_recent = true 
+    owners      = ["523616670904"]
   }
   ssh_username = "ubuntu"
 }
 
 build {
-  name    = "learn-packer"
+  name = "learn-packer"
   sources = [
     "source.amazon-ebs.ubuntu"
   ]
